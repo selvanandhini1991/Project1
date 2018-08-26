@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="SalesforcesTestCases.TestCase">
+        <methods>
+          <include name="ViewContact"/>
+          <include name="Opportunity"/>
+          <include name="QuitBrowser"/>
+          <include name="Mycontacts"/>
+          <include name="createOpty"/>
+          <include name="createNewContact"/>
+        </methods>
+      </class> <!-- SalesforcesTestCases.TestCase -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
