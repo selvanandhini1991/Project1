@@ -15,12 +15,19 @@ public class Xero_LoginPage {
 		this.driver=driver;
 	}
 	
+	/*
+	 * Name:Login
+	 * Description: Enter un and pwd and click login
+	 * Arguments: username and password
+	 * */
 	public void Login(String username,String password) {
 		LoginPage lp = new LoginPage(driver);
 		ReusableFunc R = new ReusableFunc(driver);
 		R.Entervalue(lp.username(), username, "User Name");
 		R.Entervalue(lp.password(), password, "password");
 		R.Clickbtn(lp.Loginbtn(), "Login");
+		System.out.println("git new");
+		System.out.println("hi");
 		
 	}
 	
