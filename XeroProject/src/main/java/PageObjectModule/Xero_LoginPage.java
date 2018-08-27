@@ -31,5 +31,12 @@ public class Xero_LoginPage {
 		sAssert.assertEquals(lp.Errormsg().getText(), Expected);
 	}
 	
+	public void ForgotPassword() {
+		LoginPage lp = new LoginPage(driver);
+		ReusableFunc R = new ReusableFunc(driver);
+		R.ClickElement(lp.forgotpwd(), "Forgot password link");
+		
+	}
+	
 
 }

@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import PageObjectModule.Xero_DashBoardPage;
+import PageObjectModule.Xero_ForgotPassword;
 import PageObjectModule.Xero_LoginPage;
 import PageObjectModule.Xero_homePage;
 import XeroAppResource.Base;
@@ -38,7 +39,7 @@ public class TCDriver extends Base{
 		xhp.NavigatetoLogin();
 		Wait();
 		Properties pro = new Properties();
-		FileInputStream fis = new FileInputStream("C:\\Users\\pkp\\eclipse-workspace\\XeroProject\\src\\main\\java\\XeroAppResource\\data.properties");
+		FileInputStream fis = new FileInputStream("C:\\Users\\pkp\\Documents\\GitHub\\Project1\\XeroProject\\src\\main\\java\\XeroAppResource\\data.properties");
 		pro.load(fis);
 		String un = pro.getProperty("un");
 		String pass = pro.getProperty("pwd");
@@ -73,6 +74,24 @@ public class TCDriver extends Base{
 		xlp.IncorrectCredential(Expected);
 		System.out.println("TC02 Pass");
 	}
+	
+	@Test(priority=4)
+	public void Forgot_Password() {
+		Xero_LoginPage xlp = new Xero_LoginPage(driver);
+		xlp.ForgotPassword();
+		Xero_ForgotPassword xfp = new Xero_ForgotPassword(driver);
+		xfp.forgotpasswordrequest("testuser@gmail.com");
+		driver.close();
+	}
+	
+	@Test(priority=5)
+	public void SignUp_to_XDC() throws IOException {
+		launchBrowser();
+		Xero_homePage xhp = new Xero_homePage(driver);
+		xhp.FreeTrail();
+		
+	}
+	
 	
 	@AfterClass
 	public void teardown() {

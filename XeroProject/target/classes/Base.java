@@ -22,7 +22,7 @@ public class Base {
 		Properties pro = new Properties();
 		try 
 		{
-			FileInputStream fis = new FileInputStream("C:\\Users\\pkp\\eclipse-workspace\\XeroProject\\src\\main\\java\\XeroAppResource\\data.properties");
+			FileInputStream fis = new FileInputStream("C:\\Users\\pkp\\Documents\\GitHub\\Project1\\XeroProject\\src\\main\\java\\XeroAppResource\\data.properties");
 			pro.load(fis);
 			String browserName = pro.getProperty("browser");
 			String url = pro.getProperty("url");

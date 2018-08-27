@@ -50,5 +50,16 @@ public class ReusableFunc {
 			System.out.println("Fail: "+ textboxname+ " is not displayed in the page");
 		}
 	}
+	
+	public void DisplayCheck(WebElement E,String name) {
+		if(E.isDisplayed())
+		{
+			System.out.println("Pass: "+ name+" is displayed");
+		}else
+		{
+			System.out.println("Fail: "+name+" is not displayed");
+		}
+		
+	}
 
 }

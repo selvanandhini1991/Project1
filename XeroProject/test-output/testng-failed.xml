@@ -5,11 +5,9 @@
     <classes>
       <class name="XeroAppTestCases.TCDriver">
         <methods>
-          <include name="Incorrect_Email"/>
           <include name="OpenApp"/>
           <include name="Navigate_to_XERO"/>
           <include name="teardown"/>
-          <include name="Incorrect_Password"/>
         </methods>
       </class> <!-- XeroAppTestCases.TCDriver -->
     </classes>

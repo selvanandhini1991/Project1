@@ -15,8 +15,12 @@ public class LoginPage {
 	By password = By.xpath("//input[@id='password']");
 	By Loginbtn = By.xpath("//button[@id='submitButton']");
 	By Errormsg = By.xpath("//div[@class='x-boxed warning']//p");
+	By forgotpwd = By.xpath("//a[@class='forgot-password-advert']");
 	
 	
+	public WebElement forgotpwd() {
+		return driver.findElement(forgotpwd);
+	}
 	public WebElement Errormsg() {
 		return driver.findElement(Errormsg);
 	}

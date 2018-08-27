@@ -12,7 +12,12 @@ public class homePage {
 	}
 	
 	By loginlink = By.xpath("//li[@class='global-ceiling-bar-cta1']/a");
+	By Freetrail = By.xpath("//li[@class='global-ceiling-bar-cta2']/a");
 	
+	
+	public WebElement Freetrail() {
+		return driver.findElement(Freetrail);
+	}
 	public WebElement loginlink() {
 		return driver.findElement(loginlink);
 	}

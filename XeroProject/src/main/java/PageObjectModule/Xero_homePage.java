@@ -15,5 +15,11 @@ public class Xero_homePage {
 		ReusableFunc R = new ReusableFunc(driver);
 		R.Clickbtn(hp.loginlink(), "LoginLink");				
 	}
+	public void FreeTrail() {
+		homePage hp = new homePage(driver);
+		ReusableFunc R = new ReusableFunc(driver);
+		R.Clickbtn(hp.Freetrail(), "Free trail");
+		
+	}
 
 }
