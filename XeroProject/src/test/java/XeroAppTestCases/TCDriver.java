@@ -92,6 +92,11 @@ public class TCDriver extends Base{
 		
 	}
 	
+	@Test
+	public void Sample() {
+		System.out.println("tc");
+	}
+	
 	
 	@AfterClass
 	public void teardown() {
