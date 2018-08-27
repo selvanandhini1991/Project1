@@ -18,7 +18,7 @@ public class Xero_DashBoardPage {
 		R.ClickElement(db.Logoutbtn(), "Log out Button");
 	}
 	//new method
-	private void sysout() {
+	private void sysout1() {
 		// TODO Auto-generated method stub
 
 	}
