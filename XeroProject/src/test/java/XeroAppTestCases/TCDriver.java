@@ -97,6 +97,11 @@ public class TCDriver extends Base{
 		Xero_ForgotPassword xfp = new Xero_ForgotPassword(driver);
 		xfp.forgotpasswordrequest("testuser@gmail.com");
 		driver.close();
+
+		//vinoth2 changes
+		System.out.println("TC02 Pass");
+		System.out.println("TC03 Pass");
+
 		
 	}
 	
