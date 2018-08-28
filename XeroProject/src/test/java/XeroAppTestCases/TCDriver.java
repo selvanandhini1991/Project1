@@ -91,6 +91,9 @@ public class TCDriver extends Base{
 		launchBrowser();
 		Xero_homePage xhp = new Xero_homePage(driver);
 		xhp.FreeTrail();
+		//vinoth2 changes
+		System.out.println("TC02 Pass");
+		System.out.println("TC03 Pass");
 		
 	}
 	
