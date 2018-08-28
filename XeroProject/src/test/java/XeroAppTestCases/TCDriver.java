@@ -33,6 +33,7 @@ public class TCDriver extends Base{
 		
 	
 	}
+	/*TC01 Login to app*/
 	@Test(priority=1)
 	public void Navigate_to_XERO() throws IOException {
 		Xero_homePage xhp = new Xero_homePage(driver);
@@ -52,6 +53,7 @@ public class TCDriver extends Base{
 		Xero_DashBoardPage xdb = new Xero_DashBoardPage(driver);
 		xdb.LogOut();
 		Wait();
+		
 	}
 	
 	@Test(priority=2)
