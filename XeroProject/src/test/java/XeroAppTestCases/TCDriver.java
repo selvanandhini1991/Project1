@@ -91,6 +91,12 @@ public class TCDriver extends Base{
 		launchBrowser();
 		Xero_homePage xhp = new Xero_homePage(driver);
 		xhp.FreeTrail();
+		//nandhini2 lines
+		Xero_LoginPage xlp = new Xero_LoginPage(driver);
+		xlp.ForgotPassword();
+		Xero_ForgotPassword xfp = new Xero_ForgotPassword(driver);
+		xfp.forgotpasswordrequest("testuser@gmail.com");
+		driver.close();
 		
 	}
 	
