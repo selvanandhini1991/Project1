@@ -16,7 +16,8 @@ import PageObjectModule.Xero_ForgotPassword;
 import PageObjectModule.Xero_LoginPage;
 import PageObjectModule.Xero_homePage;
 import XeroAppResource.Base;
-
+public void method1(){
+}	
 public class TCDriver extends Base{
 	public WebDriver driver;
 	public SoftAssert sAssert = new SoftAssert();
